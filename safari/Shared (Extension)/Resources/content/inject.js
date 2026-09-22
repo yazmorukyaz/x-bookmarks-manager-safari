@@ -97,16 +97,12 @@
       url: url || lastBookmarkMeta?.url,
       meta: lastBookmarkMeta,
     });
-
     if (!folderListRequested && lastBookmarkMeta?.headers && !String(url || "").includes("BookmarkFoldersSlice")) {
       folderListRequested = true;
       const folderUrl = new URL(FOLDER_LIST_URL);
       folderUrl.searchParams.set("variables", "{}");
-      originalFetch(folderUrl.toString(), {
-        method: "GET",
-        credentials: "include",
-        headers: sanitizeHeaders(lastBookmarkMeta.headers),
-      }).then((response) => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
+      originalFetch(folderUrl.toString(), { method: "GET", credentials: "include", headers: sanitizeHeaders(lastBookmarkMeta.headers) })
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
         .then((data) => handlePayload(data, "folder-list", folderUrl.toString(), lastBookmarkMeta))
         .catch((error) => dispatch("folders-error", { message: error.message }));
     }
@@ -406,9 +402,7 @@
     const folderId = e.detail?.folderId;
     if (!folderId || !lastBookmarkMeta) return;
     const url = new URL(FOLDER_TIMELINE_URL);
-    url.searchParams.set("variables", JSON.stringify({
-      bookmark_collection_id: String(folderId), count: 20, includePromotedContent: false,
-    }));
+    url.searchParams.set("variables", JSON.stringify({ bookmark_collection_id: String(folderId), count: 20, includePromotedContent: false }));
     const sourceUrl = new URL(lastBookmarkMeta.url || location.href, location.origin);
     const features = sourceUrl.searchParams.get("features");
     if (features) url.searchParams.set("features", features);
@@ -416,9 +410,7 @@
       const response = await originalFetch(url.toString(), { method: "GET", credentials: "include", headers: sanitizeHeaders(lastBookmarkMeta.headers) });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       handlePayload(await response.json(), "folder", url.toString(), lastBookmarkMeta);
-    } catch (error) {
-      dispatch("fetch-error", { message: error.message });
-    }
+    } catch (error) { dispatch("fetch-error", { message: error.message }); }
   });
 
   document.addEventListener("x-bookmarks-remove", async (e) => {

@@ -197,63 +197,13 @@ body.xbm-active [data-testid="primaryColumn"] {
   padding: 16px 20px 8px;
 }
 
-.xbm-folder-row {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 14px;
-  padding: 2px 1px 8px;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  scroll-snap-type: x proximity;
-}
-
-.xbm-folder {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  flex: 0 0 auto;
-  max-width: 240px;
-  padding: 9px 13px;
-  border: 1px solid #cfd9de;
-  border-radius: 999px;
-  background: #fff;
-  color: #536471;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  scroll-snap-align: start;
-}
-
-.xbm-folder > span:first-child {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.xbm-folder:hover {
-  border-color: #1d9bf0;
-  color: #0f1419;
-}
-
-.xbm-folder.active {
-  border-color: #1d9bf0;
-  background: #1d9bf0;
-  color: #fff;
-}
-
-.xbm-folder-count {
-  min-width: 20px;
-  padding: 1px 6px;
-  border-radius: 999px;
-  background: rgba(83, 100, 113, 0.12);
-  font-size: 12px;
-  text-align: center;
-}
-
-.xbm-folder.active .xbm-folder-count {
-  background: rgba(255, 255, 255, 0.22);
-}
+.xbm-folder-row { display: flex; gap: 8px; margin-bottom: 14px; padding: 2px 1px 8px; overflow-x: auto; scrollbar-width: thin; scroll-snap-type: x proximity; }
+.xbm-folder { display: inline-flex; align-items: center; gap: 7px; flex: 0 0 auto; max-width: 240px; padding: 9px 13px; border: 1px solid #cfd9de; border-radius: 999px; background: #fff; color: #536471; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; scroll-snap-align: start; }
+.xbm-folder > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.xbm-folder:hover { border-color: #1d9bf0; color: #0f1419; }
+.xbm-folder.active { border-color: #1d9bf0; background: #1d9bf0; color: #fff; }
+.xbm-folder-count { min-width: 20px; padding: 1px 6px; border-radius: 999px; background: rgba(83, 100, 113, 0.12); font-size: 12px; text-align: center; }
+.xbm-folder.active .xbm-folder-count { background: rgba(255, 255, 255, 0.22); }
 
 .xbm-search-wrap {
   position: relative;

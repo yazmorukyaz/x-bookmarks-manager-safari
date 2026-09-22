@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90395543062FFD1002F1E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395533062FFD1002F1E53 /* AppDelegate.swift */; };
+		C90395563062FFD1002F1E53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395553062FFD1002F1E53 /* SceneDelegate.swift */; };
+		C90395593062FFD1002F1E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90395573062FFD1002F1E53 /* LaunchScreen.storyboard */; };
+		C903955C3062FFD1002F1E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C903955A3062FFD1002F1E53 /* Main.storyboard */; };
+		C90395653062FFD1002F1E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395643062FFD1002F1E53 /* AppDelegate.swift */; };
+		C90395683062FFD1002F1E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90395663062FFD1002F1E53 /* Main.storyboard */; };
+		C903956F3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C90395793062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C903957E3062FFD1002F1E53 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C90395433062FFD0002F1E53 /* Main.html */; };
+		C903957F3062FFD1002F1E53 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C90395433062FFD0002F1E53 /* Main.html */; };
+		C90395803062FFD1002F1E53 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C90395453062FFD0002F1E53 /* Icon.png */; };
+		C90395813062FFD1002F1E53 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C90395453062FFD0002F1E53 /* Icon.png */; };
+		C90395823062FFD1002F1E53 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C90395463062FFD0002F1E53 /* Style.css */; };
+		C90395833062FFD1002F1E53 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C90395463062FFD0002F1E53 /* Style.css */; };
+		C90395843062FFD1002F1E53 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C90395473062FFD0002F1E53 /* Script.js */; };
+		C90395853062FFD1002F1E53 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C90395473062FFD0002F1E53 /* Script.js */; };
+		C90395863062FFD1002F1E53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395483062FFD0002F1E53 /* ViewController.swift */; };
+		C90395873062FFD1002F1E53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395483062FFD0002F1E53 /* ViewController.swift */; };
+		C90395883062FFD1002F1E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90395493062FFD1002F1E53 /* Assets.xcassets */; };
+		C90395893062FFD1002F1E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90395493062FFD1002F1E53 /* Assets.xcassets */; };
+		C903958A3062FFD1002F1E53 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903954B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift */; };
+		C903958B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903954B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift */; };
+		C90395A73062FFD2002F1E53 /* options in Resources */ = {isa = PBXBuildFile; fileRef = C903959D3062FFD2002F1E53 /* options */; };
+		C90395A83062FFD2002F1E53 /* test in Resources */ = {isa = PBXBuildFile; fileRef = C903959E3062FFD2002F1E53 /* test */; };
+		C90395A93062FFD2002F1E53 /* README.tr.md in Resources */ = {isa = PBXBuildFile; fileRef = C903959F3062FFD2002F1E53 /* README.tr.md */; };
+		C90395AA3062FFD2002F1E53 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = C90395A03062FFD2002F1E53 /* PRIVACY.md */; };
+		C90395AB3062FFD2002F1E53 /* content in Resources */ = {isa = PBXBuildFile; fileRef = C90395A13062FFD2002F1E53 /* content */; };
+		C90395AC3062FFD2002F1E53 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C90395A23062FFD2002F1E53 /* README.md */; };
+		C90395AD3062FFD2002F1E53 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = C90395A33062FFD2002F1E53 /* package.json */; };
+		C90395AE3062FFD2002F1E53 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = C90395A43062FFD2002F1E53 /* icons */; };
+		C90395AF3062FFD2002F1E53 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C90395A53062FFD2002F1E53 /* manifest.json */; };
+		C90395B03062FFD2002F1E53 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C90395A63062FFD2002F1E53 /* assets */; };
+		C90395B13062FFD2002F1E53 /* options in Resources */ = {isa = PBXBuildFile; fileRef = C903959D3062FFD2002F1E53 /* options */; };
+		C90395B23062FFD2002F1E53 /* test in Resources */ = {isa = PBXBuildFile; fileRef = C903959E3062FFD2002F1E53 /* test */; };
+		C90395B33062FFD2002F1E53 /* README.tr.md in Resources */ = {isa = PBXBuildFile; fileRef = C903959F3062FFD2002F1E53 /* README.tr.md */; };
+		C90395B43062FFD2002F1E53 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = C90395A03062FFD2002F1E53 /* PRIVACY.md */; };
+		C90395B53062FFD2002F1E53 /* content in Resources */ = {isa = PBXBuildFile; fileRef = C90395A13062FFD2002F1E53 /* content */; };
+		C90395B63062FFD2002F1E53 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C90395A23062FFD2002F1E53 /* README.md */; };
+		C90395B73062FFD2002F1E53 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = C90395A33062FFD2002F1E53 /* package.json */; };
+		C90395B83062FFD2002F1E53 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = C90395A43062FFD2002F1E53 /* icons */; };
+		C90395B93062FFD2002F1E53 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C90395A53062FFD2002F1E53 /* manifest.json */; };
+		C90395BA3062FFD2002F1E53 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = C90395A63062FFD2002F1E53 /* assets */; };
+		C90395BB3062FFD2002F1E53 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = C90395BD3062FFD2002F1E53 /* popup */; };
+		C90395BC3062FFD2002F1E53 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = C90395BD3062FFD2002F1E53 /* popup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90395703062FFD1002F1E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C903953D3062FFD0002F1E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C903956D3062FFD1002F1E53;
+			remoteInfo = "X Bookmarks Manager Extension (iOS)";
+		};
+		C903957A3062FFD1002F1E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C903953D3062FFD0002F1E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90395773062FFD1002F1E53;
+			remoteInfo = "X Bookmarks Manager Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C90395913062FFD1002F1E53 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C903956F3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90395983062FFD1002F1E53 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C90395793062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C90395443062FFD0002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		C90395453062FFD0002F1E53 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C90395463062FFD0002F1E53 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		C90395473062FFD0002F1E53 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		C90395483062FFD0002F1E53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C90395493062FFD1002F1E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C903954B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		C90395503062FFD1002F1E53 /* X Bookmarks Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X Bookmarks Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90395533062FFD1002F1E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C90395553062FFD1002F1E53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C90395583062FFD1002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C903955B3062FFD1002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C903955D3062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90395623062FFD1002F1E53 /* X Bookmarks Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X Bookmarks Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90395643062FFD1002F1E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C90395673062FFD1002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C90395693062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "X Bookmarks Manager Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90395733062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "X Bookmarks Manager Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C903957D3062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C903959D3062FFD2002F1E53 /* options */ = {isa = PBXFileReference; lastKnownFileType = folder; name = options; path = Resources/options; sourceTree = "<group>"; };
+		C903959E3062FFD2002F1E53 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test; path = Resources/test; sourceTree = "<group>"; };
+		C903959F3062FFD2002F1E53 /* README.tr.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.tr.md; path = Resources/README.tr.md; sourceTree = "<group>"; };
+		C90395A03062FFD2002F1E53 /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = PRIVACY.md; path = Resources/PRIVACY.md; sourceTree = "<group>"; };
+		C90395A13062FFD2002F1E53 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = Resources/content; sourceTree = "<group>"; };
+		C90395A23062FFD2002F1E53 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Resources/README.md; sourceTree = "<group>"; };
+		C90395A33062FFD2002F1E53 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = package.json; path = Resources/package.json; sourceTree = "<group>"; };
+		C90395A43062FFD2002F1E53 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		C90395A53062FFD2002F1E53 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		C90395A63062FFD2002F1E53 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = Resources/assets; sourceTree = "<group>"; };
+		C90395BD3062FFD2002F1E53 /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = Resources/popup; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C903954D3062FFD1002F1E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C903955F3062FFD1002F1E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C903956B3062FFD1002F1E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90395753062FFD1002F1E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C903953C3062FFD0002F1E53 = {
+			isa = PBXGroup;
+			children = (
+				C90395413062FFD0002F1E53 /* Shared (App) */,
+				C903954A3062FFD1002F1E53 /* Shared (Extension) */,
+				C90395523062FFD1002F1E53 /* iOS (App) */,
+				C90395633062FFD1002F1E53 /* macOS (App) */,
+				C90395723062FFD1002F1E53 /* iOS (Extension) */,
+				C903957C3062FFD1002F1E53 /* macOS (Extension) */,
+				C90395513062FFD1002F1E53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90395413062FFD0002F1E53 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C90395483062FFD0002F1E53 /* ViewController.swift */,
+				C90395493062FFD1002F1E53 /* Assets.xcassets */,
+				C90395423062FFD0002F1E53 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		C90395423062FFD0002F1E53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C90395433062FFD0002F1E53 /* Main.html */,
+				C90395453062FFD0002F1E53 /* Icon.png */,
+				C90395463062FFD0002F1E53 /* Style.css */,
+				C90395473062FFD0002F1E53 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C903954A3062FFD1002F1E53 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C903959C3062FFD2002F1E53 /* Resources */,
+				C903954B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		C90395513062FFD1002F1E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90395503062FFD1002F1E53 /* X Bookmarks Manager.app */,
+				C90395623062FFD1002F1E53 /* X Bookmarks Manager.app */,
+				C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */,
+				C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90395523062FFD1002F1E53 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C90395533062FFD1002F1E53 /* AppDelegate.swift */,
+				C90395553062FFD1002F1E53 /* SceneDelegate.swift */,
+				C90395573062FFD1002F1E53 /* LaunchScreen.storyboard */,
+				C903955A3062FFD1002F1E53 /* Main.storyboard */,
+				C903955D3062FFD1002F1E53 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		C90395633062FFD1002F1E53 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C90395643062FFD1002F1E53 /* AppDelegate.swift */,
+				C90395663062FFD1002F1E53 /* Main.storyboard */,
+				C90395693062FFD1002F1E53 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		C90395723062FFD1002F1E53 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C90395733062FFD1002F1E53 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		C903957C3062FFD1002F1E53 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C903957D3062FFD1002F1E53 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		C903959C3062FFD2002F1E53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C90395BD3062FFD2002F1E53 /* popup */,
+				C903959D3062FFD2002F1E53 /* options */,
+				C903959E3062FFD2002F1E53 /* test */,
+				C903959F3062FFD2002F1E53 /* README.tr.md */,
+				C90395A03062FFD2002F1E53 /* PRIVACY.md */,
+				C90395A13062FFD2002F1E53 /* content */,
+				C90395A23062FFD2002F1E53 /* README.md */,
+				C90395A33062FFD2002F1E53 /* package.json */,
+				C90395A43062FFD2002F1E53 /* icons */,
+				C90395A53062FFD2002F1E53 /* manifest.json */,
+				C90395A63062FFD2002F1E53 /* assets */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C903954F3062FFD1002F1E53 /* X Bookmarks Manager (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90395923062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (iOS)" */;
+			buildPhases = (
+				C903954C3062FFD1002F1E53 /* Sources */,
+				C903954D3062FFD1002F1E53 /* Frameworks */,
+				C903954E3062FFD1002F1E53 /* Resources */,
+				C90395913062FFD1002F1E53 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90395713062FFD1002F1E53 /* PBXTargetDependency */,
+			);
+			name = "X Bookmarks Manager (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "X Bookmarks Manager (iOS)";
+			productReference = C90395503062FFD1002F1E53 /* X Bookmarks Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90395613062FFD1002F1E53 /* X Bookmarks Manager (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90395993062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (macOS)" */;
+			buildPhases = (
+				C903955E3062FFD1002F1E53 /* Sources */,
+				C903955F3062FFD1002F1E53 /* Frameworks */,
+				C90395603062FFD1002F1E53 /* Resources */,
+				C90395983062FFD1002F1E53 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C903957B3062FFD1002F1E53 /* PBXTargetDependency */,
+			);
+			name = "X Bookmarks Manager (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "X Bookmarks Manager (macOS)";
+			productReference = C90395623062FFD1002F1E53 /* X Bookmarks Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C903956D3062FFD1002F1E53 /* X Bookmarks Manager Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C903958E3062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (iOS)" */;
+			buildPhases = (
+				C903956A3062FFD1002F1E53 /* Sources */,
+				C903956B3062FFD1002F1E53 /* Frameworks */,
+				C903956C3062FFD1002F1E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "X Bookmarks Manager Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "X Bookmarks Manager Extension (iOS)";
+			productReference = C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C90395773062FFD1002F1E53 /* X Bookmarks Manager Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90395953062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (macOS)" */;
+			buildPhases = (
+				C90395743062FFD1002F1E53 /* Sources */,
+				C90395753062FFD1002F1E53 /* Frameworks */,
+				C90395763062FFD1002F1E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "X Bookmarks Manager Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "X Bookmarks Manager Extension (macOS)";
+			productReference = C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C903953D3062FFD0002F1E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					C903954F3062FFD1002F1E53 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					C90395613062FFD1002F1E53 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					C903956D3062FFD1002F1E53 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					C90395773062FFD1002F1E53 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = C90395403062FFD0002F1E53 /* Build configuration list for PBXProject "X Bookmarks Manager" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C903953C3062FFD0002F1E53;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C90395513062FFD1002F1E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C903954F3062FFD1002F1E53 /* X Bookmarks Manager (iOS) */,
+				C90395613062FFD1002F1E53 /* X Bookmarks Manager (macOS) */,
+				C903956D3062FFD1002F1E53 /* X Bookmarks Manager Extension (iOS) */,
+				C90395773062FFD1002F1E53 /* X Bookmarks Manager Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C903954E3062FFD1002F1E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90395803062FFD1002F1E53 /* Icon.png in Resources */,
+				C90395593062FFD1002F1E53 /* LaunchScreen.storyboard in Resources */,
+				C903957E3062FFD1002F1E53 /* Main.html in Resources */,
+				C90395843062FFD1002F1E53 /* Script.js in Resources */,
+				C90395883062FFD1002F1E53 /* Assets.xcassets in Resources */,
+				C903955C3062FFD1002F1E53 /* Main.storyboard in Resources */,
+				C90395823062FFD1002F1E53 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90395603062FFD1002F1E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90395813062FFD1002F1E53 /* Icon.png in Resources */,
+				C90395833062FFD1002F1E53 /* Style.css in Resources */,
+				C90395683062FFD1002F1E53 /* Main.storyboard in Resources */,
+				C90395853062FFD1002F1E53 /* Script.js in Resources */,
+				C90395893062FFD1002F1E53 /* Assets.xcassets in Resources */,
+				C903957F3062FFD1002F1E53 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C903956C3062FFD1002F1E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90395BC3062FFD2002F1E53 /* popup in Resources */,
+				C90395B63062FFD2002F1E53 /* README.md in Resources */,
+				C90395B83062FFD2002F1E53 /* icons in Resources */,
+				C90395B23062FFD2002F1E53 /* test in Resources */,
+				C90395B33062FFD2002F1E53 /* README.tr.md in Resources */,
+				C90395B93062FFD2002F1E53 /* manifest.json in Resources */,
+				C90395BA3062FFD2002F1E53 /* assets in Resources */,
+				C90395B13062FFD2002F1E53 /* options in Resources */,
+				C90395B43062FFD2002F1E53 /* PRIVACY.md in Resources */,
+				C90395B73062FFD2002F1E53 /* package.json in Resources */,
+				C90395B53062FFD2002F1E53 /* content in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90395763062FFD1002F1E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90395BB3062FFD2002F1E53 /* popup in Resources */,
+				C90395AC3062FFD2002F1E53 /* README.md in Resources */,
+				C90395AE3062FFD2002F1E53 /* icons in Resources */,
+				C90395A83062FFD2002F1E53 /* test in Resources */,
+				C90395A93062FFD2002F1E53 /* README.tr.md in Resources */,
+				C90395AF3062FFD2002F1E53 /* manifest.json in Resources */,
+				C90395B03062FFD2002F1E53 /* assets in Resources */,
+				C90395A73062FFD2002F1E53 /* options in Resources */,
+				C90395AA3062FFD2002F1E53 /* PRIVACY.md in Resources */,
+				C90395AD3062FFD2002F1E53 /* package.json in Resources */,
+				C90395AB3062FFD2002F1E53 /* content in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C903954C3062FFD1002F1E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90395863062FFD1002F1E53 /* ViewController.swift in Sources */,
+				C90395543062FFD1002F1E53 /* AppDelegate.swift in Sources */,
+				C90395563062FFD1002F1E53 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C903955E3062FFD1002F1E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90395873062FFD1002F1E53 /* ViewController.swift in Sources */,
+				C90395653062FFD1002F1E53 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C903956A3062FFD1002F1E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C903958A3062FFD1002F1E53 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90395743062FFD1002F1E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C903958B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90395713062FFD1002F1E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C903956D3062FFD1002F1E53 /* X Bookmarks Manager Extension (iOS) */;
+			targetProxy = C90395703062FFD1002F1E53 /* PBXContainerItemProxy */;
+		};
+		C903957B3062FFD1002F1E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90395773062FFD1002F1E53 /* X Bookmarks Manager Extension (macOS) */;
+			targetProxy = C903957A3062FFD1002F1E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90395433062FFD0002F1E53 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90395443062FFD0002F1E53 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		C90395573062FFD1002F1E53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90395583062FFD1002F1E53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C903955A3062FFD1002F1E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C903955B3062FFD1002F1E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C90395663062FFD1002F1E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90395673062FFD1002F1E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C903958C3062FFD1002F1E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C903958D3062FFD1002F1E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C903958F3062FFD1002F1E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90395903062FFD1002F1E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90395933062FFD1002F1E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_NAME = "X Bookmarks Manager";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90395943062FFD1002F1E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_NAME = "X Bookmarks Manager";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90395963062FFD1002F1E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C90395973062FFD1002F1E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C903959A3062FFD1002F1E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_NAME = "X Bookmarks Manager";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C903959B3062FFD1002F1E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_NAME = "X Bookmarks Manager";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90395403062FFD0002F1E53 /* Build configuration list for PBXProject "X Bookmarks Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C903958C3062FFD1002F1E53 /* Debug */,
+				C903958D3062FFD1002F1E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C903958E3062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C903958F3062FFD1002F1E53 /* Debug */,
+				C90395903062FFD1002F1E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90395923062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90395933062FFD1002F1E53 /* Debug */,
+				C90395943062FFD1002F1E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90395953062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90395963062FFD1002F1E53 /* Debug */,
+				C90395973062FFD1002F1E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90395993062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C903959A3062FFD1002F1E53 /* Debug */,
+				C903959B3062FFD1002F1E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C903953D3062FFD0002F1E53 /* Project object */;
+}

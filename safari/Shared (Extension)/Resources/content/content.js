@@ -82,10 +82,7 @@
     const withFolders = (tweets || []).map((tweet) => {
       if (!folderId) return tweet;
       const previous = bookmarks.get(String(tweet.id));
-      return {
-        ...tweet,
-        folderIds: Array.from(new Set([...(previous?.folderIds || []), String(folderId)])),
-      };
+      return { ...tweet, folderIds: Array.from(new Set([...(previous?.folderIds || []), String(folderId)])) };
     });
     const previousCount = bookmarks.size;
     const merged = XBookmarksArchive.merge(
@@ -189,21 +186,10 @@
   }
 
   function renderFolderPicker() {
-    const sortedFolders = Array.from(folders.values()).sort((a, b) =>
-      a.name.localeCompare(b.name, "tr")
-    );
-    const buttons = [
-      { id: "all", name: "Tümü" },
-      ...sortedFolders,
-    ];
-
+    const sortedFolders = Array.from(folders.values()).sort((a, b) => a.name.localeCompare(b.name, "tr"));
+    const buttons = [{ id: "all", name: "Tümü" }, ...sortedFolders];
     return `<div class="xbm-folder-row" aria-label="Yer işareti grupları">
-      ${buttons.map((folder) => {
-        const count = getFolderCount(folder.id);
-        return `<button type="button" class="xbm-folder${activeFolderId === String(folder.id) ? " active" : ""}" data-folder-id="${escapeHtml(folder.id)}" title="${escapeHtml(folder.name)}">
-          <span>${escapeHtml(folder.name)}</span><span class="xbm-folder-count">${count}</span>
-        </button>`;
-      }).join("")}
+      ${buttons.map((folder) => `<button type="button" class="xbm-folder${activeFolderId === String(folder.id) ? " active" : ""}" data-folder-id="${escapeHtml(folder.id)}" title="${escapeHtml(folder.name)}"><span>${escapeHtml(folder.name)}</span><span class="xbm-folder-count">${getFolderCount(folder.id)}</span></button>`).join("")}
     </div>`;
   }
 
@@ -484,9 +470,7 @@
         }
         const title = document.querySelector(".xbm-title");
         if (title) title.textContent = getActiveFolderName();
-        document.querySelectorAll(".xbm-folder").forEach((item) => {
-          item.classList.toggle("active", item.dataset.folderId === activeFolderId);
-        });
+        document.querySelectorAll(".xbm-folder").forEach((item) => item.classList.toggle("active", item.dataset.folderId === activeFolderId));
         updateMainContent();
       });
     });
@@ -585,105 +569,43 @@
 
   function crc32(bytes) {
     let crc = -1;
-    for (const byte of bytes) {
-      crc ^= byte;
-      for (let i = 0; i < 8; i += 1) crc = (crc >>> 1) ^ (0xedb88320 & -(crc & 1));
-    }
+    for (const byte of bytes) { crc ^= byte; for (let i = 0; i < 8; i += 1) crc = (crc >>> 1) ^ (0xedb88320 & -(crc & 1)); }
     return (crc ^ -1) >>> 0;
   }
 
   function zipBytes(files) {
-    const encoder = new TextEncoder();
-    const parts = [];
-    const central = [];
+    const encoder = new TextEncoder(), parts = [], central = [];
     let offset = 0;
     const view = (size) => new DataView(new ArrayBuffer(size));
-    const join = (chunks) => {
-      const size = chunks.reduce((sum, chunk) => sum + chunk.byteLength, 0);
-      const output = new Uint8Array(size);
-      let cursor = 0;
-      for (const chunk of chunks) { output.set(new Uint8Array(chunk), cursor); cursor += chunk.byteLength; }
-      return output;
-    };
-
+    const join = (chunks) => { const output = new Uint8Array(chunks.reduce((sum, chunk) => sum + chunk.byteLength, 0)); let cursor = 0; for (const chunk of chunks) { output.set(new Uint8Array(chunk), cursor); cursor += chunk.byteLength; } return output; };
     for (const file of files) {
-      const name = encoder.encode(file.name);
-      const data = file.data instanceof Uint8Array ? file.data : new Uint8Array(file.data);
-      const checksum = crc32(data);
-      const local = view(30);
-      local.setUint32(0, 0x04034b50, true); local.setUint16(4, 20, true);
-      local.setUint16(6, 0x0800, true); local.setUint32(14, checksum, true);
-      local.setUint32(18, data.length, true); local.setUint32(22, data.length, true);
-      local.setUint16(26, name.length, true);
+      const name = encoder.encode(file.name), data = file.data instanceof Uint8Array ? file.data : new Uint8Array(file.data), checksum = crc32(data), local = view(30);
+      local.setUint32(0, 0x04034b50, true); local.setUint16(4, 20, true); local.setUint16(6, 0x0800, true); local.setUint32(14, checksum, true); local.setUint32(18, data.length, true); local.setUint32(22, data.length, true); local.setUint16(26, name.length, true);
       parts.push(local.buffer, name, data);
-
-      const record = view(46);
-      record.setUint32(0, 0x02014b50, true); record.setUint16(4, 20, true); record.setUint16(6, 20, true);
-      record.setUint16(8, 0x0800, true); record.setUint32(16, checksum, true);
-      record.setUint32(20, data.length, true); record.setUint32(24, data.length, true);
-      record.setUint16(28, name.length, true); record.setUint32(42, offset, true);
-      central.push(record.buffer, name);
-      offset += 30 + name.length + data.length;
+      const record = view(46); record.setUint32(0, 0x02014b50, true); record.setUint16(4, 20, true); record.setUint16(6, 20, true); record.setUint16(8, 0x0800, true); record.setUint32(16, checksum, true); record.setUint32(20, data.length, true); record.setUint32(24, data.length, true); record.setUint16(28, name.length, true); record.setUint32(42, offset, true); central.push(record.buffer, name); offset += 30 + name.length + data.length;
     }
-
-    const centralBytes = join(central);
-    const end = view(22);
-    end.setUint32(0, 0x06054b50, true); end.setUint16(8, files.length, true);
-    end.setUint16(10, files.length, true); end.setUint32(12, centralBytes.length, true);
-    end.setUint32(16, offset, true);
-    return join([...parts, centralBytes, end.buffer]);
+    const centralBytes = join(central), end = view(22); end.setUint32(0, 0x06054b50, true); end.setUint16(8, files.length, true); end.setUint16(10, files.length, true); end.setUint32(12, centralBytes.length, true); end.setUint32(16, offset, true); return join([...parts, centralBytes, end.buffer]);
   }
 
   function mediaExtension(url, contentType) {
     const type = String(contentType || "").split(";")[0];
-    if (type === "image/png") return "png";
-    if (type === "image/webp") return "webp";
-    if (type === "image/gif") return "gif";
+    if (type === "image/png") return "png"; if (type === "image/webp") return "webp"; if (type === "image/gif") return "gif";
     return String(url).match(/\.([a-z0-9]{2,5})(?:\?|$)/i)?.[1] || "jpg";
   }
 
   async function exportMediaArchive(data) {
-    const files = [];
-    const failures = [];
-    const archived = JSON.parse(JSON.stringify(data));
-    let completed = 0;
-    const mediaItems = [];
-
-    for (const bookmark of archived.bookmarks) {
-      for (const [scope, list] of [["media", bookmark.media], ["quoted", bookmark.quotedTweet?.media]]) {
-        (list || []).forEach((media, index) => mediaItems.push({ bookmark, media, scope, index }));
-      }
-    }
-
-    showToast(`Görseller indiriliyor… 0/${mediaItems.length}`);
+    const files = [], failures = [], archived = JSON.parse(JSON.stringify(data)), mediaItems = [];
+    for (const bookmark of archived.bookmarks) for (const [scope, list] of [["media", bookmark.media], ["quoted", bookmark.quotedTweet?.media]]) (list || []).forEach((media, index) => mediaItems.push({ bookmark, media, scope, index }));
+    let completed = 0; showToast(`Görseller indiriliyor… 0/${mediaItems.length}`);
     for (const item of mediaItems) {
-      const sourceUrl = item.media.type === "video" ? item.media.previewUrl : (item.media.url || item.media.previewUrl);
-      if (!sourceUrl) continue;
-      try {
-        const response = await fetch(sourceUrl, { credentials: "omit" });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const bytes = new Uint8Array(await response.arrayBuffer());
-        const extension = mediaExtension(sourceUrl, response.headers.get("content-type"));
-        const path = `media/${item.bookmark.id}-${item.scope}-${item.index}.${extension}`;
-        files.push({ name: path, data: bytes });
-        item.media.localPath = path;
-      } catch (error) {
-        failures.push({ bookmarkId: item.bookmark.id, url: sourceUrl, error: error.message });
-      }
-      completed += 1;
-      showToast(`Görseller indiriliyor… ${completed}/${mediaItems.length}`);
+      const sourceUrl = item.media.type === "video" ? item.media.previewUrl : (item.media.url || item.media.previewUrl); if (!sourceUrl) continue;
+      try { const response = await fetch(sourceUrl, { credentials: "omit" }); if (!response.ok) throw new Error(`HTTP ${response.status}`); const bytes = new Uint8Array(await response.arrayBuffer()); const path = `media/${item.bookmark.id}-${item.scope}-${item.index}.${mediaExtension(sourceUrl, response.headers.get("content-type"))}`; files.push({ name: path, data: bytes }); item.media.localPath = path; }
+      catch (error) { failures.push({ bookmarkId: item.bookmark.id, url: sourceUrl, error: error.message }); }
+      completed += 1; showToast(`Görseller indiriliyor… ${completed}/${mediaItems.length}`);
     }
-
     archived.mediaArchive = { included: files.length, failed: failures.length, failures };
     files.unshift({ name: "bookmarks.json", data: new TextEncoder().encode(JSON.stringify(archived, null, 2)) });
-    const blob = new Blob([zipBytes(files)], { type: "application/zip" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `x-bookmarks-with-images-${new Date().toISOString().slice(0, 10)}.zip`;
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    showToast(`${files.length - 1} görsel ZIP arşivine eklendi`);
+    const blob = new Blob([zipBytes(files)], { type: "application/zip" }), url = URL.createObjectURL(blob), link = document.createElement("a"); link.href = url; link.download = `x-bookmarks-with-images-${new Date().toISOString().slice(0, 10)}.zip`; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); showToast(`${files.length - 1} görsel ZIP arşivine eklendi`);
   }
 
   async function exportJson(range = "all") {
@@ -710,11 +632,7 @@
       Array.from(bookmarks.values()),
       { days, from, to }
     );
-
-    if (range === "media") {
-      await exportMediaArchive(data);
-      return;
-    }
+    if (range === "media") { await exportMediaArchive(data); return; }
 
     const blob = new Blob([JSON.stringify(data, null, 2)], {
       type: "application/json",
@@ -842,11 +760,8 @@
 
     const folderList = XBookmarksParser.parseFolderList(payload);
     if (folderList.folders.length) mergeFolders(folderList.folders);
-
     const folderTimeline = XBookmarksParser.parseFolderTimeline(payload, url);
-    const { tweets, cursor } = folderTimeline.folderId
-      ? folderTimeline
-      : XBookmarksParser.parseBookmarkResponse(payload);
+    const { tweets, cursor } = folderTimeline.folderId ? folderTimeline : XBookmarksParser.parseBookmarkResponse(payload);
     mergeBookmarks(tweets, folderTimeline.folderId);
 
     if (cursor) {
@@ -858,8 +773,7 @@
     isFetchingMore = false;
 
     if (uiRoot) {
-      const toolbar = document.querySelector(".xbm-toolbar");
-      const oldPicker = toolbar?.querySelector(".xbm-folder-row");
+      const oldPicker = document.querySelector(".xbm-folder-row");
       if (oldPicker) {
         oldPicker.outerHTML = renderFolderPicker();
         bindFolderEvents();

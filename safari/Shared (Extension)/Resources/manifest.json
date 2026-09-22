@@ -14,8 +14,7 @@
     "default_popup": "popup/popup.html"
   },
   "options_ui": {
-    "page": "options/options.html",
-    "open_in_tab": true
+    "page": "options/options.html"
   },
   "host_permissions": [
     "https://x.com/*",

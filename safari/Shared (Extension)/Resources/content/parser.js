@@ -158,46 +158,30 @@
 
   function normalizeFolder(folder) {
     if (!folder) return null;
-    const id =
-      folder.id_str ||
-      folder.rest_id ||
-      folder.id ||
-      folder.bookmark_collection_id;
+    const id = folder.id_str || folder.rest_id || folder.id || folder.bookmark_collection_id;
     const name = folder.name || folder.title || folder.label;
     if (!id || !name) return null;
     return { id: String(id), name: String(name) };
   }
 
   function parseFolderList(payload) {
-    const slice =
-      payload?.data?.viewer?.user_results?.result?.bookmark_collections_slice ||
+    const slice = payload?.data?.viewer?.user_results?.result?.bookmark_collections_slice ||
       payload?.data?.viewer?.user_results?.result?.bookmark_collections ||
-      payload?.data?.bookmark_collections_slice ||
-      null;
+      payload?.data?.bookmark_collections_slice || null;
     if (!slice) return { folders: [], cursor: null };
-
-    const candidates =
-      slice.items || slice.bookmark_collections || slice.collections || slice;
-    const values = Array.isArray(candidates)
-      ? candidates
-      : Object.values(candidates || {}).filter((value) => value && typeof value === "object");
+    const candidates = slice.items || slice.bookmark_collections || slice.collections || slice;
+    const values = Array.isArray(candidates) ? candidates :
+      Object.values(candidates || {}).filter((value) => value && typeof value === "object");
     const folders = [];
     const seen = new Set();
-
     for (const candidate of values) {
-      const folder = normalizeFolder(
-        candidate?.bookmark_collection || candidate?.collection || candidate
-      );
+      const folder = normalizeFolder(candidate?.bookmark_collection || candidate?.collection || candidate);
       if (folder && !seen.has(folder.id)) {
         seen.add(folder.id);
         folders.push(folder);
       }
     }
-
-    return {
-      folders,
-      cursor: slice.next_cursor || slice.cursor || slice.nextCursor || null,
-    };
+    return { folders, cursor: slice.next_cursor || slice.cursor || slice.nextCursor || null };
   }
 
   function getFolderIdFromUrl(url) {
@@ -205,12 +189,7 @@
     try {
       const parsed = new URL(url, window.location.origin);
       const variables = JSON.parse(parsed.searchParams.get("variables") || "{}");
-      return String(
-        variables.bookmark_collection_id ||
-        variables.bookmarkCollectionId ||
-        variables.folder_id ||
-        ""
-      ) || null;
+      return String(variables.bookmark_collection_id || variables.bookmarkCollectionId || variables.folder_id || "") || null;
     } catch {
       return null;
     }
@@ -220,11 +199,7 @@
     const timeline = payload?.data?.bookmark_collection_timeline?.timeline;
     if (!timeline) return { folderId: getFolderIdFromUrl(url), tweets: [], cursor: null };
     const parsed = parseBookmarkResponse(payload);
-    return {
-      folderId: getFolderIdFromUrl(url),
-      tweets: parsed.tweets,
-      cursor: parsed.cursor,
-    };
+    return { folderId: getFolderIdFromUrl(url), tweets: parsed.tweets, cursor: parsed.cursor };
   }
 
   window.XBookmarksParser = {

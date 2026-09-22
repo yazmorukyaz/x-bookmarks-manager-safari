@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/social-preview.png" alt="X Bookmarks Manager for Safari" width="100%" />
+<img src="assets/banner.png" alt="X Bookmarks Manager" width="100%" />
 
-# X Bookmarks Manager for Safari
+# X Bookmarks Manager
 
-**A Safari Web Extension that turns X bookmarks into a searchable, folder-aware visual archive.**
+**A free Chrome extension that turns your X (Twitter) bookmarks into a modern masonry view.**
 
-Browse existing X bookmark folders, search by author or text, and export JSON with an optional offline image archive.
+Search, filter by author, export to JSON, and auto-load all pages — all in one clean interface.
 
 **English** · [Türkçe](README.tr.md)
 
@@ -18,24 +18,22 @@ Browse existing X bookmark folders, search by author or text, and export JSON wi
 
 ## ⬇️ Installation
 
-> The Safari extension is provided as an Xcode project for macOS and iOS.
+> The extension is not on the Chrome Web Store yet; you can install it easily with the steps below.
 
-1. Clone this repository.
-2. Open `safari/X Bookmarks Manager.xcodeproj` in Xcode.
-3. Select the **X Bookmarks Manager (macOS)** or **(iOS)** scheme and run it.
-4. Enable **X Bookmarks Manager** in Safari → Settings → Extensions.
-5. Open [x.com/i/history](https://x.com/i/history) and choose **Bookmarks**.
-
-More detail: [Safari installation guide](SAFARI.md).
+1. **Download:** Click the green **`Code`** button at the top of this page → **Download ZIP** and extract it on your computer.
+   _(or: `git clone https://github.com/sarisen/x-bookmark-manager.git`)_
+2. Open **`chrome://extensions`** in Chrome's address bar.
+3. Enable **Developer mode** from the top right.
+4. Click **Load unpacked** and select the extracted **`x-bookmark-manager`** folder.
+5. Open [x.com/i/bookmarks](https://x.com/i/bookmarks) — the new interface is ready! 🎉
 
 ## ✨ Features
 
 - 🧱 **Masonry grid** — bookmarks grouped into cards by month
 - 🔍 **Search** and an **Authors** tab for quick filtering
-- 📁 **X bookmark folders** — browse existing groups without recreating them
 - ⏬ **Load All** — automatically fetches every page with a configurable delay (default 3s)
 - 🗑️ **Remove bookmark** — directly from the card
-- 📤 **Export to JSON or ZIP** — optionally include photos and video thumbnails for offline use
+- 📤 **Export to JSON** — your data stays entirely with you
 - 🗓️ **Date ranges** — export the last 7 or 30 days, a custom date range, or the full archive by tweet date
 - 💾 **Local archive** — fetched bookmarks survive browser restarts
 - ⚙️ **Settings** — wait time between pages (1–60s)
@@ -63,8 +61,6 @@ All data is processed **only in your browser**; nothing is sent to any external 
 │   ├── parser.js
 │   └── styles.css
 ├── options/          # Settings page
-├── popup/            # Safari toolbar entry point
-├── safari/           # macOS and iOS Xcode project
 ├── icons/            # Extension icons
 └── assets/           # Promotional images
 ```
