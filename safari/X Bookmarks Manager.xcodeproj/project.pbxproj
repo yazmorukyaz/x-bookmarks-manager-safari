@@ -674,6 +674,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
@@ -689,7 +690,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
 				PRODUCT_NAME = "X Bookmarks Manager Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -707,6 +708,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
@@ -722,7 +724,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
 				PRODUCT_NAME = "X Bookmarks Manager Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -743,6 +745,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
@@ -763,7 +766,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
 				PRODUCT_NAME = "X Bookmarks Manager";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -783,6 +786,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
@@ -803,7 +807,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
 				PRODUCT_NAME = "X Bookmarks Manager";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -822,6 +826,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -840,7 +845,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
 				PRODUCT_NAME = "X Bookmarks Manager Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -857,6 +862,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -875,7 +881,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
 				PRODUCT_NAME = "X Bookmarks Manager Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -894,6 +900,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -915,7 +922,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
 				PRODUCT_NAME = "X Bookmarks Manager";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
@@ -935,6 +942,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -956,7 +964,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sarisen.x-bookmark-manager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
 				PRODUCT_NAME = "X Bookmarks Manager";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
