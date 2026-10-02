@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "X Bookmarks Manager",
+  "name": "Bookmark Grove",
   "version": "1.6.0",
-  "description": "X yer işaretlerini ve mevcut klasörlerini modern, aranabilir bir görünümde gösterir.",
+  "description": "Kayıtlı gönderileri ve klasörleri modern, aranabilir bir görünümde gösterir.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -10,7 +10,7 @@
   },
   "permissions": ["storage", "unlimitedStorage"],
   "action": {
-    "default_title": "Open X Bookmarks Manager",
+    "default_title": "Open Bookmark Grove",
     "default_popup": "popup/popup.html"
   },
   "options_ui": {

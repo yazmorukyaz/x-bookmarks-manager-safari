@@ -1,38 +1,13 @@
-# Gizlilik Politikası — X Bookmarks Manager
+# Bookmark Grove Privacy Policy
 
-**Son güncelleme:** 2 Haziran 2026
+Updated October 2, 2026.
 
-## Özet
+Bookmark Grove is a Safari extension that organizes posts you have bookmarked at x.com. It uses your existing browser session; no Appy Labs account is required.
 
-X Bookmarks Manager, yalnızca tarayıcınızda çalışan ücretsiz bir Chrome eklentisidir. Verilerinizi sunucularımıza göndermez, üçüncü taraflarla paylaşmaz ve reklam amaçlı izleme yapmaz.
+The extension reads bookmark pages and associated media so it can show folders, search results, and optional local exports. It stores a bookmark archive and preferences in Safari's extension storage on your device. Appy Labs does not receive your bookmarks, exported files, or media, and the extension has no Appy Labs analytics, ads, or backend.
 
-## Toplanan Veriler
+If you export your archive, the files are saved to the location you choose. Clearing the extension's storage or removing the extension removes its local archive, but does not remove bookmarks from your account on the source site. Exported files must be deleted separately. A removal action inside the extension affects your account only when you choose it.
 
-Eklenti aşağıdaki verileri **yalnızca yerel cihazınızda** işler:
+The extension needs access to x.com and its media domains to read bookmark pages and to display or export available images and videos. The source site supplies those pages and media under its own policies.
 
-- X (Twitter) yer işaretleriniz (sayfa yüklenirken X'in kendi API'sinden okunur)
-- Yer işareti arşiviniz (`chrome.storage.local` içinde saklanır)
-
-## Veri Aktarımı
-
-- Hiçbir veri harici bir sunucuya gönderilmez
-- Analitik, telemetri veya reklam ağı kullanılmaz
-- JSON dışa aktarma işlemi tamamen yerel olarak gerçekleşir; dosya doğrudan bilgisayarınıza indirilir
-
-## İzinler
-
-| İzin | Amaç |
-|------|------|
-| `storage` | Ayarları ve yerel yer işareti arşivini saklamak |
-| `unlimitedStorage` | Büyük yer işareti arşivlerinin tarayıcı kotasına takılmasını önlemek |
-| `x.com` / `twitter.com` erişimi | Yer işaretleri sayfasında özel arayüzü göstermek ve X API yanıtlarını okumak |
-
-## Veri Saklama ve Silme
-
-- Çekilen yer işaretleri sonraki oturumlarda kullanılmak üzere cihazınızda saklanır
-- Eklentiyi kaldırdığınızda veya tarayıcı verilerini temizlediğinizde notlar silinir
-- Yer işareti verileri eklenti tarafından kalıcı olarak saklanmaz; her oturumda X'ten yeniden okunur
-
-## İletişim
-
-Sorularınız için GitHub deposundaki Issues bölümünü kullanabilirsiniz.
+For support or privacy questions, email hello@appylabs.xyz. If you contact us, we receive the information you choose to include in your message and use it to respond.

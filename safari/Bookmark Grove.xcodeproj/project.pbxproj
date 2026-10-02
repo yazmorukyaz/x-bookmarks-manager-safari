@@ -13,8 +13,8 @@
 		C903955C3062FFD1002F1E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C903955A3062FFD1002F1E53 /* Main.storyboard */; };
 		C90395653062FFD1002F1E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395643062FFD1002F1E53 /* AppDelegate.swift */; };
 		C90395683062FFD1002F1E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90395663062FFD1002F1E53 /* Main.storyboard */; };
-		C903956F3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C90395793062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C903956F3062FFD1002F1E53 /* Bookmark Grove Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C903956E3062FFD1002F1E53 /* Bookmark Grove Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C90395793062FFD1002F1E53 /* Bookmark Grove Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C90395783062FFD1002F1E53 /* Bookmark Grove Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C903957E3062FFD1002F1E53 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C90395433062FFD0002F1E53 /* Main.html */; };
 		C903957F3062FFD1002F1E53 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C90395433062FFD0002F1E53 /* Main.html */; };
 		C90395803062FFD1002F1E53 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C90395453062FFD0002F1E53 /* Icon.png */; };
@@ -59,14 +59,14 @@
 			containerPortal = C903953D3062FFD0002F1E53 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C903956D3062FFD1002F1E53;
-			remoteInfo = "X Bookmarks Manager Extension (iOS)";
+			remoteInfo = "Bookmark Grove Extension (iOS)";
 		};
 		C903957A3062FFD1002F1E53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C903953D3062FFD0002F1E53 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C90395773062FFD1002F1E53;
-			remoteInfo = "X Bookmarks Manager Extension (macOS)";
+			remoteInfo = "Bookmark Grove Extension (macOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -77,7 +77,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C903956F3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */,
+				C903956F3062FFD1002F1E53 /* Bookmark Grove Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +88,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C90395793062FFD1002F1E53 /* X Bookmarks Manager Extension.appex in Embed Foundation Extensions */,
+				C90395793062FFD1002F1E53 /* Bookmark Grove Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,19 +103,19 @@
 		C90395483062FFD0002F1E53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C90395493062FFD1002F1E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C903954B3062FFD1002F1E53 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		C90395503062FFD1002F1E53 /* X Bookmarks Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X Bookmarks Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90395503062FFD1002F1E53 /* Bookmark Grove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bookmark Grove.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90395533062FFD1002F1E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90395553062FFD1002F1E53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C90395583062FFD1002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C903955B3062FFD1002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C903955D3062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C90395623062FFD1002F1E53 /* X Bookmarks Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X Bookmarks Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90395623062FFD1002F1E53 /* Bookmark Grove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bookmark Grove.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90395643062FFD1002F1E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90395673062FFD1002F1E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C90395693062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "X Bookmarks Manager Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C903956E3062FFD1002F1E53 /* Bookmark Grove Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bookmark Grove Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90395733062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "X Bookmarks Manager Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90395783062FFD1002F1E53 /* Bookmark Grove Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bookmark Grove Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C903957D3062FFD1002F1E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C903959D3062FFD2002F1E53 /* options */ = {isa = PBXFileReference; lastKnownFileType = folder; name = options; path = Resources/options; sourceTree = "<group>"; };
 		C903959E3062FFD2002F1E53 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test; path = Resources/test; sourceTree = "<group>"; };
@@ -208,10 +208,10 @@
 		C90395513062FFD1002F1E53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C90395503062FFD1002F1E53 /* X Bookmarks Manager.app */,
-				C90395623062FFD1002F1E53 /* X Bookmarks Manager.app */,
-				C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */,
-				C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */,
+				C90395503062FFD1002F1E53 /* Bookmark Grove.app */,
+				C90395623062FFD1002F1E53 /* Bookmark Grove.app */,
+				C903956E3062FFD1002F1E53 /* Bookmark Grove Extension.appex */,
+				C90395783062FFD1002F1E53 /* Bookmark Grove Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C903954F3062FFD1002F1E53 /* X Bookmarks Manager (iOS) */ = {
+		C903954F3062FFD1002F1E53 /* Bookmark Grove (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C90395923062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (iOS)" */;
+			buildConfigurationList = C90395923062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove (iOS)" */;
 			buildPhases = (
 				C903954C3062FFD1002F1E53 /* Sources */,
 				C903954D3062FFD1002F1E53 /* Frameworks */,
@@ -290,16 +290,16 @@
 			dependencies = (
 				C90395713062FFD1002F1E53 /* PBXTargetDependency */,
 			);
-			name = "X Bookmarks Manager (iOS)";
+			name = "Bookmark Grove (iOS)";
 			packageProductDependencies = (
 			);
-			productName = "X Bookmarks Manager (iOS)";
-			productReference = C90395503062FFD1002F1E53 /* X Bookmarks Manager.app */;
+			productName = "Bookmark Grove (iOS)";
+			productReference = C90395503062FFD1002F1E53 /* Bookmark Grove.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C90395613062FFD1002F1E53 /* X Bookmarks Manager (macOS) */ = {
+		C90395613062FFD1002F1E53 /* Bookmark Grove (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C90395993062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (macOS)" */;
+			buildConfigurationList = C90395993062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove (macOS)" */;
 			buildPhases = (
 				C903955E3062FFD1002F1E53 /* Sources */,
 				C903955F3062FFD1002F1E53 /* Frameworks */,
@@ -311,16 +311,16 @@
 			dependencies = (
 				C903957B3062FFD1002F1E53 /* PBXTargetDependency */,
 			);
-			name = "X Bookmarks Manager (macOS)";
+			name = "Bookmark Grove (macOS)";
 			packageProductDependencies = (
 			);
-			productName = "X Bookmarks Manager (macOS)";
-			productReference = C90395623062FFD1002F1E53 /* X Bookmarks Manager.app */;
+			productName = "Bookmark Grove (macOS)";
+			productReference = C90395623062FFD1002F1E53 /* Bookmark Grove.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C903956D3062FFD1002F1E53 /* X Bookmarks Manager Extension (iOS) */ = {
+		C903956D3062FFD1002F1E53 /* Bookmark Grove Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C903958E3062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (iOS)" */;
+			buildConfigurationList = C903958E3062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove Extension (iOS)" */;
 			buildPhases = (
 				C903956A3062FFD1002F1E53 /* Sources */,
 				C903956B3062FFD1002F1E53 /* Frameworks */,
@@ -330,16 +330,16 @@
 			);
 			dependencies = (
 			);
-			name = "X Bookmarks Manager Extension (iOS)";
+			name = "Bookmark Grove Extension (iOS)";
 			packageProductDependencies = (
 			);
-			productName = "X Bookmarks Manager Extension (iOS)";
-			productReference = C903956E3062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */;
+			productName = "Bookmark Grove Extension (iOS)";
+			productReference = C903956E3062FFD1002F1E53 /* Bookmark Grove Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		C90395773062FFD1002F1E53 /* X Bookmarks Manager Extension (macOS) */ = {
+		C90395773062FFD1002F1E53 /* Bookmark Grove Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C90395953062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (macOS)" */;
+			buildConfigurationList = C90395953062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove Extension (macOS)" */;
 			buildPhases = (
 				C90395743062FFD1002F1E53 /* Sources */,
 				C90395753062FFD1002F1E53 /* Frameworks */,
@@ -349,11 +349,11 @@
 			);
 			dependencies = (
 			);
-			name = "X Bookmarks Manager Extension (macOS)";
+			name = "Bookmark Grove Extension (macOS)";
 			packageProductDependencies = (
 			);
-			productName = "X Bookmarks Manager Extension (macOS)";
-			productReference = C90395783062FFD1002F1E53 /* X Bookmarks Manager Extension.appex */;
+			productName = "Bookmark Grove Extension (macOS)";
+			productReference = C90395783062FFD1002F1E53 /* Bookmark Grove Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +380,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C90395403062FFD0002F1E53 /* Build configuration list for PBXProject "X Bookmarks Manager" */;
+			buildConfigurationList = C90395403062FFD0002F1E53 /* Build configuration list for PBXProject "Bookmark Grove" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -394,10 +394,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C903954F3062FFD1002F1E53 /* X Bookmarks Manager (iOS) */,
-				C90395613062FFD1002F1E53 /* X Bookmarks Manager (macOS) */,
-				C903956D3062FFD1002F1E53 /* X Bookmarks Manager Extension (iOS) */,
-				C90395773062FFD1002F1E53 /* X Bookmarks Manager Extension (macOS) */,
+				C903954F3062FFD1002F1E53 /* Bookmark Grove (iOS) */,
+				C90395613062FFD1002F1E53 /* Bookmark Grove (macOS) */,
+				C903956D3062FFD1002F1E53 /* Bookmark Grove Extension (iOS) */,
+				C90395773062FFD1002F1E53 /* Bookmark Grove Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -509,12 +509,12 @@
 /* Begin PBXTargetDependency section */
 		C90395713062FFD1002F1E53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C903956D3062FFD1002F1E53 /* X Bookmarks Manager Extension (iOS) */;
+			target = C903956D3062FFD1002F1E53 /* Bookmark Grove Extension (iOS) */;
 			targetProxy = C90395703062FFD1002F1E53 /* PBXContainerItemProxy */;
 		};
 		C903957B3062FFD1002F1E53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C90395773062FFD1002F1E53 /* X Bookmarks Manager Extension (macOS) */;
+			target = C90395773062FFD1002F1E53 /* Bookmark Grove Extension (macOS) */;
 			targetProxy = C903957A3062FFD1002F1E53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -673,11 +673,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -691,7 +691,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
-				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				PRODUCT_NAME = "Bookmark Grove Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -707,11 +707,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -725,7 +725,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
-				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				PRODUCT_NAME = "Bookmark Grove Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -744,11 +744,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -767,7 +767,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
-				PRODUCT_NAME = "X Bookmarks Manager";
+				PRODUCT_NAME = "Bookmark Grove";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -785,11 +785,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -808,7 +808,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
-				PRODUCT_NAME = "X Bookmarks Manager";
+				PRODUCT_NAME = "Bookmark Grove";
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -825,14 +825,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -846,7 +846,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
-				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				PRODUCT_NAME = "Bookmark Grove Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -861,14 +861,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -882,7 +882,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager.Extension;
-				PRODUCT_NAME = "X Bookmarks Manager Extension";
+				PRODUCT_NAME = "Bookmark Grove Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -899,7 +899,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -907,7 +907,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -923,7 +923,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
-				PRODUCT_NAME = "X Bookmarks Manager";
+				PRODUCT_NAME = "Bookmark Grove";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -941,7 +941,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U326U4AA67;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -949,7 +949,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "X Bookmarks Manager";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bookmark Grove";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -965,7 +965,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appylabs.xbookmarksmanager;
-				PRODUCT_NAME = "X Bookmarks Manager";
+				PRODUCT_NAME = "Bookmark Grove";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -980,7 +980,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C90395403062FFD0002F1E53 /* Build configuration list for PBXProject "X Bookmarks Manager" */ = {
+		C90395403062FFD0002F1E53 /* Build configuration list for PBXProject "Bookmark Grove" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C903958C3062FFD1002F1E53 /* Debug */,
@@ -989,7 +989,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C903958E3062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (iOS)" */ = {
+		C903958E3062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C903958F3062FFD1002F1E53 /* Debug */,
@@ -998,7 +998,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C90395923062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (iOS)" */ = {
+		C90395923062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C90395933062FFD1002F1E53 /* Debug */,
@@ -1007,7 +1007,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C90395953062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager Extension (macOS)" */ = {
+		C90395953062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C90395963062FFD1002F1E53 /* Debug */,
@@ -1016,7 +1016,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C90395993062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "X Bookmarks Manager (macOS)" */ = {
+		C90395993062FFD1002F1E53 /* Build configuration list for PBXNativeTarget "Bookmark Grove (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C903959A3062FFD1002F1E53 /* Debug */,

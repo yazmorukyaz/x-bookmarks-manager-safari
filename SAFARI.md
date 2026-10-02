@@ -6,12 +6,12 @@ extension code inside a native container app.
 
 ## Run on macOS
 
-1. Open `safari/X Bookmarks Manager.xcodeproj` in Xcode.
-2. Select the **X Bookmarks Manager (macOS)** scheme and your Apple Developer
+1. Open `safari/Bookmark Grove.xcodeproj` in Xcode.
+2. Select the **Bookmark Grove (macOS)** scheme and your Apple Developer
    team under Signing & Capabilities.
-3. Run the app, then enable **X Bookmarks Manager** in Safari > Settings >
+3. Run the app, then enable **Bookmark Grove** in Safari > Settings >
    Extensions.
-4. Allow access to `x.com`, sign in to X, and open
+4. Allow access to `x.com`, sign in to your account there, and open
    `https://x.com/i/bookmarks`.
 
 For local development without signing, Safari on macOS can also load
@@ -21,7 +21,7 @@ or after 24 hours.
 
 ## Run on iOS
 
-1. Select the **X Bookmarks Manager (iOS)** scheme in Xcode.
+1. Select the **Bookmark Grove (iOS)** scheme in Xcode.
 2. Choose a simulator or device, select your development team, and run.
 3. Enable the extension under Settings > Apps > Safari > Extensions and allow
    access to `x.com`.

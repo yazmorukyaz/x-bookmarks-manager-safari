@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/social-preview.png" alt="X Bookmarks Manager for Safari" width="100%" />
+<img src="assets/icon-source.png" alt="Bookmark Grove icon" width="160" />
 
-# X Bookmarks Manager for Safari
+# Bookmark Grove for Safari
 
-**A Safari Web Extension that turns X bookmarks into a searchable, folder-aware visual archive.**
+**A Safari Web Extension that turns saved posts into a searchable, folder-aware visual archive.**
 
-Browse existing X bookmark folders, search by author or text, and export JSON with an optional offline image archive.
+Browse existing bookmark folders at x.com, search by author or text, and export JSON with an optional offline image archive.
 
 **English** · [Türkçe](README.tr.md)
 
@@ -21,9 +21,9 @@ Browse existing X bookmark folders, search by author or text, and export JSON wi
 > The Safari extension is provided as an Xcode project for macOS and iOS.
 
 1. Clone this repository.
-2. Open `safari/X Bookmarks Manager.xcodeproj` in Xcode.
-3. Select the **X Bookmarks Manager (macOS)** or **(iOS)** scheme and run it.
-4. Enable **X Bookmarks Manager** in Safari → Settings → Extensions.
+2. Open `safari/Bookmark Grove.xcodeproj` in Xcode.
+3. Select the **Bookmark Grove (macOS)** or **(iOS)** scheme and run it.
+4. Enable **Bookmark Grove** in Safari → Settings → Extensions.
 5. Open [x.com/i/history](https://x.com/i/history) and choose **Bookmarks**.
 
 More detail: [Safari installation guide](SAFARI.md).
@@ -32,7 +32,7 @@ More detail: [Safari installation guide](SAFARI.md).
 
 - 🧱 **Masonry grid** — bookmarks grouped into cards by month
 - 🔍 **Search** and an **Authors** tab for quick filtering
-- 📁 **X bookmark folders** — browse existing groups without recreating them
+- 📁 **Bookmark folders** — browse existing groups without recreating them
 - ⏬ **Load All** — automatically fetches every page with a configurable delay (default 3s)
 - 🗑️ **Remove bookmark** — directly from the card
 - 📤 **Export to JSON or ZIP** — optionally include photos and video thumbnails for offline use
@@ -59,7 +59,7 @@ All data is processed **only in your browser**; nothing is sent to any external 
 ├── manifest.json
 ├── content/
 │   ├── content.js    # UI
-│   ├── inject.js     # X API capture
+│   ├── inject.js     # Bookmark-response capture
 │   ├── parser.js
 │   └── styles.css
 ├── options/          # Settings page

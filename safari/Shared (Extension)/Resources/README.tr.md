@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="X Bookmarks Manager" width="100%" />
+<img src="assets/icon-source.png" alt="Bookmark Grove simgesi" width="160" />
 
-# X Bookmarks Manager
+# Bookmark Grove
 
-**X (Twitter) yer işaretlerinizi modern bir masonry görünüme dönüştüren ücretsiz Chrome eklentisi.**
+**Kaydettiğiniz gönderileri klasörlü, aranabilir bir görünüme dönüştüren Safari eklentisi.**
 
 Arama, yazarlara göre filtreleme, JSON dışa aktarma ve tüm sayfaları otomatik yükleme — hepsi tek bir şık arayüzde.
 
@@ -18,13 +18,12 @@ Arama, yazarlara göre filtreleme, JSON dışa aktarma ve tüm sayfaları otomat
 
 ## ⬇️ Kurulum
 
-> Eklenti henüz Chrome Web Mağazası'nda değil; aşağıdaki adımlarla kolayca yükleyebilirsiniz.
+> Safari eklentisi macOS için Xcode projesi olarak sağlanır.
 
-1. **İndirin:** Bu sayfanın üstündeki yeşil **`Code`** butonuna tıklayın → **Download ZIP** ve dosyayı bilgisayarınıza çıkarın.
-   _(veya: `git clone https://github.com/sarisen/x-bookmark-manager.git`)_
-2. Chrome'da adres çubuğuna **`chrome://extensions`** yazıp açın.
-3. Sağ üstten **Geliştirici modu**nu açın.
-4. **Paketlenmemiş öğe yükle** butonuna tıklayın ve indirdiğiniz **`x-bookmark-manager`** klasörünü seçin.
+1. Depoyu indirin ve `safari/Bookmark Grove.xcodeproj` dosyasını Xcode'da açın.
+2. **Bookmark Grove (macOS)** şemasını seçip uygulamayı çalıştırın.
+3. Safari > Ayarlar > Eklentiler bölümünden **Bookmark Grove** eklentisini etkinleştirin.
+4. `x.com` erişimine izin verin.
 5. [x.com/i/bookmarks](https://x.com/i/bookmarks) sayfasını açın — yeni arayüz hazır! 🎉
 
 ## ✨ Özellikler
@@ -57,7 +56,7 @@ Tüm veriler **yalnızca tarayıcınızda** işlenir; hiçbir veri harici bir su
 ├── manifest.json
 ├── content/
 │   ├── content.js    # Arayüz
-│   ├── inject.js     # X API yakalama
+│   ├── inject.js     # Yer işareti yanıtlarını yakalama
 │   ├── parser.js
 │   └── styles.css
 ├── options/          # Ayarlar sayfası

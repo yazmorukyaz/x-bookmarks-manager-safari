@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="X Bookmarks Manager" width="100%" />
+<img src="assets/icon-source.png" alt="Bookmark Grove icon" width="160" />
 
-# X Bookmarks Manager
+# Bookmark Grove for Safari
 
-**A free Chrome extension that turns your X (Twitter) bookmarks into a modern masonry view.**
+**A Safari Web Extension that turns saved posts into a searchable, folder-aware visual archive.**
 
-Search, filter by author, export to JSON, and auto-load all pages — all in one clean interface.
+Browse existing bookmark folders at x.com, search by author or text, and export JSON with an optional offline image archive.
 
 **English** · [Türkçe](README.tr.md)
 
@@ -18,22 +18,24 @@ Search, filter by author, export to JSON, and auto-load all pages — all in one
 
 ## ⬇️ Installation
 
-> The extension is not on the Chrome Web Store yet; you can install it easily with the steps below.
+> The Safari extension is provided as an Xcode project for macOS and iOS.
 
-1. **Download:** Click the green **`Code`** button at the top of this page → **Download ZIP** and extract it on your computer.
-   _(or: `git clone https://github.com/sarisen/x-bookmark-manager.git`)_
-2. Open **`chrome://extensions`** in Chrome's address bar.
-3. Enable **Developer mode** from the top right.
-4. Click **Load unpacked** and select the extracted **`x-bookmark-manager`** folder.
-5. Open [x.com/i/bookmarks](https://x.com/i/bookmarks) — the new interface is ready! 🎉
+1. Clone this repository.
+2. Open `safari/Bookmark Grove.xcodeproj` in Xcode.
+3. Select the **Bookmark Grove (macOS)** or **(iOS)** scheme and run it.
+4. Enable **Bookmark Grove** in Safari → Settings → Extensions.
+5. Open [x.com/i/history](https://x.com/i/history) and choose **Bookmarks**.
+
+More detail: [Safari installation guide](SAFARI.md).
 
 ## ✨ Features
 
 - 🧱 **Masonry grid** — bookmarks grouped into cards by month
 - 🔍 **Search** and an **Authors** tab for quick filtering
+- 📁 **Bookmark folders** — browse existing groups without recreating them
 - ⏬ **Load All** — automatically fetches every page with a configurable delay (default 3s)
 - 🗑️ **Remove bookmark** — directly from the card
-- 📤 **Export to JSON** — your data stays entirely with you
+- 📤 **Export to JSON or ZIP** — optionally include photos and video thumbnails for offline use
 - 🗓️ **Date ranges** — export the last 7 or 30 days, a custom date range, or the full archive by tweet date
 - 💾 **Local archive** — fetched bookmarks survive browser restarts
 - ⚙️ **Settings** — wait time between pages (1–60s)
@@ -57,10 +59,12 @@ All data is processed **only in your browser**; nothing is sent to any external 
 ├── manifest.json
 ├── content/
 │   ├── content.js    # UI
-│   ├── inject.js     # X API capture
+│   ├── inject.js     # Bookmark-response capture
 │   ├── parser.js
 │   └── styles.css
 ├── options/          # Settings page
+├── popup/            # Safari toolbar entry point
+├── safari/           # macOS and iOS Xcode project
 ├── icons/            # Extension icons
 └── assets/           # Promotional images
 ```
